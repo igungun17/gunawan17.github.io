@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        </style>
+        <title>Belajar Form</title>
+    </head>
+
+    <body>
+        <h2>Formulir Pendaftaran Mahasiswa</h2>
+        <!-- enctype digunakan untuk keperluan upload file -->
+        <hr>
+        <form action="INDEX.PHP" method="post">
+            <label>Nama Lengkap</label> <br>
+            <input type="text" name="nama" placeholder="Masukkan Nama"> <br>
+
+            <br>
+            <label>NPM</label> <br>
+            <input type="number" name="npm" placeholder="Masukkan NPM" required> <br>
+
+            <br>
+            <label>Tanggal Lahir</label> <br>
+            <input type="date" name="tgl_lahir" required> <br>
+
+            <br>
+            <input type="checkbox" name="jlenis_kelamin" value="Laki-laki"> Laki-laki
+            <input type="checkbox" name="jenis_kelamin" value="Perempuan"> Perempuan
+            <br>
+
+            <input type="file" name="dokumen" id=""> <br>
+
+            <select name="transportasi" id="">
+                <option value="" selected disabled>-- Pilih Transportasi --</option>
+                <option value="motor">Motor</option>
+                <option value="sepeda">Sepeda</option>
+                <option value="mobil">Mobil</option>
+            </select>
+            <br>
+            <input type="password" name="password" placeholder="Input Password" max="3"> <br>
+
+            <br>
+            <input type="submit" value="SIMPAN" name="simpan">
+        </form>
+    </body>
+</html>
